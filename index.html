@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+      #loading, #results, #loading1 ,#results1{
+        display: none;
+      }
+    </style>
+    <title>Celsius-Fahrenheit-Celsius Calc</title>
+  </head>
+  <body class="bg-dark">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <div class="card card-body text-center mt-5">
+            <h1 class="heading display-5 pb-3">Celsius - Fahrenheit</h1>
+            <form id="celsius-fahrenheit">
+              <div class="form-group">
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><sup>o</sup>C</span>
+                  </div>
+                  <input type="number" class="form-control" id="celsius" value="0" placeholder="Celsius">
+                </div>                
+              </div>
+              <!-- LOADER  1-->
+              <div id="loading">
+                  <img src="img/loading.gif" alt="">
+                </div>
+              <div class="form-group">
+                <div id="results">
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"><sup>o</sup>F</span>
+                    </div>
+                    <input type="number" class="form-control" id="fahrenheit" placeholder="Fahrenheit" disabled>
+                  </div>                
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="submit" value="Calculate" class="btn btn-dark btn-block" id="celsiusFahrenheit">
+              </div>
+            </form>
+          </div>
+          <!-- Second Card F - C -->
+          <div class="card card-body text-center mt-5">
+            <h1 class="heading display-5 pb-3">Fahrenheit - Celsius</h1>
+            <form id="fahrenheit-celsius">
+              <div class="form-group">
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><sup>o</sup>F</span>
+                  </div>
+                  <input type="number" class="form-control" id="fahrenheit1" value="32" placeholder="Celsius">
+                </div>                
+              </div>
+              <!-- LOADER 2 -->
+              <div id="loading1">
+                  <img src="img/loading.gif" alt="">
+                </div>
+              <div class="form-group">
+                <div id="results1">
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"><sup>o</sup>C</span>
+                    </div>
+                    <input type="number" class="form-control" id="celsius1" placeholder="Celsius" disabled>
+                  </div>                
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="submit" value="Calculate" class="btn btn-dark btn-block">
+              </div>
+            </form>
+          </div>          
+        </div>
+      </div>
+    </div>
+      
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
